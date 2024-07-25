@@ -32,7 +32,7 @@ const Hero = () => {
           <h1 className='text-3xl md:text-4xl font-thin mb-4'>Hype N Harmony</h1>
           <h1 className='text-5xl md:text-8xl'>Event Planners</h1>
           <h1 className='text-2xl md:text-4xl mt-4 font-thin'>
-            we organize <span><FlipWords words={words} className='-ml-0.5' /></span>
+            we organize<span><FlipWords words={words} className='-ml-0' /></span>
           </h1>
           <div className='mt-10 flex flex-col  md:justify-start md:flex-row space-y-4 md:space-y-0 md:space-x-8'>
            <a href="#About">
