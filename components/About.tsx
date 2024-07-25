@@ -19,7 +19,7 @@ const About = () => {
               About Us
             </h1>
             <p className='text-base font-extralight leading-6 justify-center '>
-              Harmony in Hype, where we craft perfection in every event! 🌟 Our dedicated team brings together creativity, meticulous planning, and seamless execution to transform your vision into unforgettable experiences. Whether it's a corporate gala, a dream wedding, or an intimate celebration, we ensure every detail harmonizes to create moments that resonate. Let us elevate your event to new heights, making memories that last a lifetime.
+              Harmony in Hype, where we craft perfection in every event! 🌟 Our dedicated team brings together creativity, meticulous planning, and seamless execution to transform your vision into unforgettable experiences. Whether it&apos;s a corporate gala, a dream wedding, or an intimate celebration, we ensure every detail harmonizes to create moments that resonate. Let us elevate your event to new heights, making memories that last a lifetime.
             </p>
           </div>
         </div>
@@ -31,7 +31,7 @@ const About = () => {
           About Us
         </h1>
         <p className='text-black text-base md:text-lg leading-relaxed hidden md:block'>
-          Harmony in Hype, where we craft perfection in every event! 🌟 Our dedicated team brings together creativity, meticulous planning, and seamless execution to transform your vision into unforgettable experiences. Whether it's a corporate gala, a dream wedding, or an intimate celebration, we ensure every detail harmonizes to create moments that resonate. Let us elevate your event to new heights, making memories that last a lifetime.
+          Harmony in Hype, where we craft perfection in every event! 🌟 Our dedicated team brings together creativity, meticulous planning, and seamless execution to transform your vision into unforgettable experiences. Whether it&apos;s a corporate gala, a dream wedding, or an intimate celebration, we ensure every detail harmonizes to create moments that resonate. Let us elevate your event to new heights, making memories that last a lifetime.
         </p>
       </div>
     </div>
