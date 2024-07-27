@@ -21,6 +21,7 @@ const Location = () => {
                 RKR Enclave Park, Hyderabad, <br />
                 Telangana, 500079
               </h1>
+              <h2 className='text-white mt-3'>8309338241</h2>
             </div>
             <footer className=' text-white p-4 py-16'>
               <div className='flex space-x-4'>

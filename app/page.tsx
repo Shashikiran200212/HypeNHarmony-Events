@@ -1,3 +1,5 @@
+"use"
+
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Process from "@/components/Process";
@@ -14,7 +16,7 @@ export default function Home() {
         <div className="md:block hidden ">
           <Process/>
         </div>
-        <RecentWorks/>
+        {/* <RecentWorks/> */}
         <Services/>
         <Location/>
     </main>

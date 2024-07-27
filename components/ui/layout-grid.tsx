@@ -1,14 +1,14 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 
 type Card = {
   id: number;
   content: JSX.Element | React.ReactNode | string;
   className: string;
   thumbnail: string;
+  overlayText: string;
 };
 
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
@@ -26,7 +26,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative   rounded-xl">
+    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -37,13 +37,13 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
               selected?.id === card.id
                 ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
-                ? "z-40  rounded-xl h-full w-full"
-                : " rounded-xl h-full w-full"
+                ? "z-40 rounded-xl h-full w-full"
+                : "rounded-xl h-full w-full"
             )}
             layoutId={`card-${card.id}`}
           >
             {selected?.id === card.id && <SelectedCard selected={selected} />}
-            <ImageComponent card={card} />
+            <ImageComponent card={card} selected={selected} />
           </motion.div>
         </div>
       ))}
@@ -59,24 +59,39 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   );
 };
 
-const ImageComponent = ({ card }: { card: Card }) => {
+const ImageComponent = ({ card, selected }: { card: Card; selected: Card | null }) => {
   return (
-    <motion.img
-      layoutId={`image-${card.id}-image`}
-      src={card.thumbnail}
-      height="500"
-      width="500"
-      className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
+    <div className="relative h-full w-full">
+      <motion.img
+        layoutId={`image-${card.id}-image`}
+        src={card.thumbnail}
+        height="500"
+        width="500"
+        className={cn(
+          "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
+        )}
+        alt="thumbnail"
+      />
+      {selected?.id !== card.id && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70">
+          <h1 className="text-white text-3xl font-semibold font-sans">{card.overlayText}</h1>
+        </div>
       )}
-      alt="thumbnail"
-    />
+    </div>
   );
 };
 
 const SelectedCard = ({ selected }: { selected: Card | null }) => {
   return (
     <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
+      <motion.img
+        layoutId={`image-${selected?.id}-image`}
+        src={selected?.thumbnail}
+        height="500"
+        width="500"
+        className="object-cover object-top absolute inset-0 h-full w-full"
+        alt="thumbnail"
+      />
       <motion.div
         initial={{
           opacity: 0,
