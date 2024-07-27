@@ -16,7 +16,7 @@ export default function Home() {
         <div className="md:block hidden ">
           <Process/>
         </div>
-        {/* <RecentWorks/> */}
+        <RecentWorks/>
         <Services/>
         <Location/>
     </main>
