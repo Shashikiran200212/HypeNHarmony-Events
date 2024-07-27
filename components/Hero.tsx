@@ -10,7 +10,7 @@ const Hero = () => {
       style={{ backgroundImage: "url('bg1.jpg')" }}
     >
       {/* Overlay */}
-      <div className='absolute inset-0 bg-black opacity-80'></div>
+      <div className='absolute inset-0 bg-black opacity-80'></div>  
       
       {/* Content */}
       <div className='relative z-10 flex flex-col h-full md:justify-normal justify-center'>
@@ -19,8 +19,8 @@ const Hero = () => {
             <img src="logow.png" alt="logo" className='w-[150px] h-[150px] md:w-[100px] md:h-[100px]' />
           </span>
           <div className='hidden md:flex flex-col md:flex-row items-center mt-4 md:mt-0 space-y-4 md:space-y-0'>
-            <p className='text-white flex justify-center px-4 md:px-10'>Home</p>
-            <p className='text-white flex justify-center px-4 md:px-10'>Events</p>
+            <div className='text-white flex justify-center px-4 md:px-10'>Home</div>
+            <a href="#services"><div className='text-white flex justify-center px-4 md:px-10'>Events</div></a>
             <p className='text-white flex justify-center px-4 md:px-10'>Gallery</p>
             <p className='text-white flex justify-center px-4 md:px-10'>Contact</p>
             <button className='text-white flex justify-center px-4 py-1 border rounded-full w-auto h-9 bg-black'>

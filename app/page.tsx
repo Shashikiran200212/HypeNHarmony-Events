@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Process from "@/components/Process";
 import RecentWorks from "@/components/RecentWorks";
 import Services from "@/components/Services";
+import Location from "@/components/Location";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         </div>
         <RecentWorks/>
         <Services/>
+        <Location/>
     </main>
   );
 }
