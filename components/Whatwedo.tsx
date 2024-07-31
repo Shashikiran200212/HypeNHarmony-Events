@@ -8,7 +8,7 @@ const Whatwedo = () => {
   return (
     <div className='w-full h-2/3 relative overflow-hidden' id='offer'>
       <BackgroundGradientAnimation>
-        <div className="md:relative md:py-32  md:gap-4 z-50 inset-0 flex flex-col items-center justify-center text-white font-bold px-4 pointer-events-none">
+        <div className="md:relative py-7 md:py-32  md:gap-4 z-50 inset-0 flex flex-col items-center justify-center text-white font-bold px-4 pointer-events-none">
           <div className='text-sm md:text-4xl m-6 md:m-10 font-thin space-x-72 text-white'>
             <u style={{ 
               textDecoration: 'underline', 
