@@ -2,13 +2,13 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className='relative bg-slate-400 bg-opacity-45 w-full md:h-screen h-auto flex flex-col md:flex-row px-3 md:px-24 py-6 md:py-12' id='About'>
+    <div className='relative bg-slate-400 bg-opacity-45 w-full md:h-screen  flex flex-col md:flex-row  md:px-24  md:py-12' id='About'>
       {/* Image and overlay for mobile */}
-      <div className='relative flex justify-center items-center md:w-1/2 mb-6 md:mb-0  '>
+      <div className='relative flex justify-center items-center md:w-1/2 md:mb-0  '>
         <img
           src="bg2.jpg"
           alt="Background"
-          className='border   w-full md:h-auto lg:h-screen   max-w-[650px] opacity-80'
+          className='   w-full md:h-screen lg:h-screen   max-w-[650px] opacity-80'
         />
         {/* Dark overlay on mobile */}
         <div className='absolute inset-0 bg-black opacity-40 md:hidden '></div>

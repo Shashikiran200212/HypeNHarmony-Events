@@ -129,27 +129,42 @@ const SkeletonFive = () => {
     );
   };
 
+  const SkeletonNine = () => {
+    return (
+      <div>
+        <p className="font-bold md:text-4xl text-xl text-white">
+          Rivers are serene
+        </p>
+        <p className="font-normal text-base text-white"></p>
+        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+          A house by the river is a place of peace and tranquility. It&apos;s the
+          perfect place to relax, unwind, and enjoy life.
+        </p>
+      </div>
+    );
+  };
+
 const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
     className: "col-span-1 row-span-2",
     thumbnail:"/eng.jpg",
-    overlayText:"Engagements"
+    overlayText:"Engagement parties"
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1 row-span-2",
     thumbnail:"wed.webp",
-    overlayText:"Marriages"
+    overlayText:"Weddings"
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1 row-span-2",
     thumbnail:"corp.jpg",
-    overlayText:"Corporate events"
+    overlayText:"Invites"
   },
   {
     id: 4,
@@ -163,7 +178,7 @@ const cards = [
     content: <SkeletonFive />,
     className: "md:col-span-1 row-span-2",
     thumbnail:"haldi.webp",
-    overlayText:"Haldi cermony"
+    overlayText:"Bridal showers"
   },
   {
     id: 6,
@@ -178,14 +193,22 @@ const cards = [
     content: <SkeletonSeven />,
     className: "col-span-1 row-span-2",
     thumbnail:"ani.jpg",
-      overlayText:"Anniversary"
+      overlayText:"Anniversaries"
   },
 
   {
     id: 8,
     content: <SkeletonEight />,
-    className: " md:col-span-2 row-span-2  ",
-    thumbnail:"cover.jpeg",
-    overlayText:"And many more"
+    className: " md:col-span-1 row-span-2  ",
+    thumbnail:"baby.jpg",
+    overlayText:"Baby showers"
+  },
+  
+  {   
+    id: 9,
+    content: <SkeletonNine />,
+    className: " md:col-span-1 row-span-2  ",
+    thumbnail:"craddle.jpg",
+    overlayText:"Cradel ceremonies"
   },
 ];

@@ -21,7 +21,7 @@ const Location = () => {
                 RKR Enclave Park, Hyderabad, <br />
                 Telangana, 500079
               </h1>
-              <h2 className='text-white mt-3'>8309338241</h2>
+              <h2 className='text-white mt-3'>📱 7075376978</h2>
             </div>
             <footer className=' text-white p-4 py-16'>
               <div className='flex space-x-4'>
@@ -46,7 +46,7 @@ const Location = () => {
               RKR Enclave Park, Hyderabad, <br />
               Telangana, 500079
             </h1>
-            <h2 className='text-white mt-3'>8309338241</h2>
+            <h2 className='text-white mt-3'>📱 7075376978</h2>
           </div>
         </div>
         <div className='w-full md:w-1/2 flex justify-center'>
@@ -58,11 +58,11 @@ const Location = () => {
 
       <footer className='bg-gray-900 text-white p-4 flex flex-col md:flex-row justify-between items-center'>
   <div className='flex-grow text-left mb-4 md:mb-0'>
-    <p>Copyright © Shashi Kiran 2024</p>
+    <p>Copyright © HypeNHarmony 2024</p>
   </div>
   <div className='flex space-x-4'>
-    <img src="instagram.png" alt="Instagram Icon" className='h-8 w-8' />
-    <img src="x.png" alt="Other Icon" className='h-8 w-8' />
+    <a href="https://www.instagram.com/hypenharmony.events/?hl=en" target='blank'><img src="instagram.png" alt="Instagram Icon" className='h-8 w-8' /></a>
+    <a href="https://www.facebook.com/HypeNHarmony.Events" target='blank'><img src="x.png" alt="Other Icon" className='h-8 w-8' /></a>
   </div>
 </footer>
 

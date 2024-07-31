@@ -2,8 +2,8 @@ import React from 'react'
 
 const Process = () => {
   return (
-    <div className='w-full h-[40vh] flex flex-col items-center mt-10'>
-        <div className='text-black text-7xl  font-sans font-semibold'>
+    <div className='w-full md:h-[50vh] lg:h-[40vh] h-[20vh] flex flex-col items-center mt-10' id='process'>
+        <div className='text-black md:text-7xl text-xl    font-sans font-semibold'>
             <span className='text-purple-300'>How</span> do we work
         </div>
         <div>
