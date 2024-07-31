@@ -159,12 +159,12 @@ const cards = [
     thumbnail:"wed.webp",
     overlayText:"Weddings"
   },
-  {
+  {   
     id: 3,
     content: <SkeletonThree />,
-    className: "col-span-1 row-span-2",
-    thumbnail:"corp.jpg",
-    overlayText:"Invites"
+    className: " md:col-span-1 row-span-2  ",
+    thumbnail:"craddle.jpg",
+    overlayText:"Cradel ceremony"
   },
   {
     id: 4,
@@ -185,7 +185,7 @@ const cards = [
     content: <SkeletonSix />,
     className: "col-span-1 row-span-2",
     thumbnail:"sare.png",
-    overlayText:"Saree cermony"
+    overlayText:"Saree ceremony"
   },
 
   {
@@ -204,11 +204,11 @@ const cards = [
     overlayText:"Baby showers"
   },
   
-  {   
+  {
     id: 9,
     content: <SkeletonNine />,
-    className: " md:col-span-1 row-span-2  ",
-    thumbnail:"craddle.jpg",
-    overlayText:"Cradel ceremonies"
+    className: "col-span-1 row-span-2",
+    thumbnail:"cover.jpeg",
+    overlayText:"And many more"
   },
 ];

@@ -15,13 +15,13 @@ const Enquiry = () => {
 
       {/* Heading at the Top */}
       <div className="relative z-10 w-full text-center text-white px-4 md:px-8 lg:px-12">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold font-sans">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mt-7 font-semibold font-sans">
           Get in <span className='text-purple-400'>Touch</span>
         </h1>
       </div>
 
       {/* Enquiry Form Container */}
-      <div className="relative z-10 w-full max-w-lg p-6 bg-transparent rounded-lg shadow-lg mt-6 font-sans font-thin mx-4 sm:mx-6 lg:mx-8">
+      <div className="relative z-10 w-full max-w-lg p-6 bg-transparent rounded-lg shadow-lg mt-6 mx-4 sm:mx-6 lg:mx-8">
         <EnquiryForm />
       </div>
     </div>

@@ -7,7 +7,7 @@ const RecentWorks = () => {
         
       <div className='w-full flex justify-center mt-16 md:mt-0'>
         <h1 className='text-4xl md:text-7xl font-semibold font-sans text-black text-center'>
-          Our Recent <span className='text-purple-300'>Works</span>
+          Our Recent Works
         </h1>
       </div>
 
