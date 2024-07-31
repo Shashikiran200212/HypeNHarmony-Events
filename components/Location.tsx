@@ -25,8 +25,8 @@ const Location = () => {
             </div>
             <footer className=' text-white p-4 py-16'>
               <div className='flex space-x-4'>
-                <img src="instagram.png" alt="Instagram Icon" className='h-8 w-8' />
-                <img src="x.png" alt="Other Icon" className='h-8 w-8' />
+                <a href="https://www.instagram.com/hypenharmony.events/?hl=en"><img src="instagram.png" alt="Instagram Icon" className='h-8 w-8' /></a>
+                <a href="https://www.facebook.com/HypeNHarmony.Events"><img src="x.png" alt="Other Icon" className='h-8 w-8' /></a>
               </div>
             </footer>
           </div>
