@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
         <div className='flex flex-col items-center  lg:mt-10 p-8 md:p-20 lg:p-52 text-white'>
-          <h1 className='text-[27px] md:text-5xl lg:text-8xl '>Hype and Harmony events</h1>
+          <h1 className='text-[27px] md:text-5xl lg:text-8xl '>Hype and Harmony Events</h1>
           <h1 className='text-xl md:text-4xl mt-4 font-thin'>
             Experience the perfect blend
           </h1>
